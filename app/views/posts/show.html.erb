@@ -15,6 +15,11 @@
     <%= @post.body %>
   </p>
 
+  <%= image_tag(@post.image.url(:medium)) %>
+  <br>
+  <%= @post.description %>
+
+
   <div id="comments">
     <h2><%= @post.comments.count %> Comments</h2>
     <%= render @post.comments %>
